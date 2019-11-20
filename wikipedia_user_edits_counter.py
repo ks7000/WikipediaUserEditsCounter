@@ -22,6 +22,10 @@
 
 import requests
 from bs4 import BeautifulSoup
+import gettext
+gettext.bindtextdomain('WikipediaUserEditsCounter', '/docs/i18n')
+gettext.textdomain('WikipediaUserEditsCounter')
+_ = gettext.gettext
 
 user = "Jimmy_Olano"
 url = "https://xtools.wmflabs.org/ec/en.wikipedia.org/"+user
